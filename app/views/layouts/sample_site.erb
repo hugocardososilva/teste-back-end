@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag "application", :media => "all" %>
 
     <%= javascript_pack_tag 'application' %>
-
+    <%= render 'shared/script' %>
 
   </head>
   <body>
@@ -26,8 +26,8 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Início", root_path  %></li>
-            <li><%= link_to pluralize_model(Contact), contacts_path  %></li>
-            <li><%= link_to pluralize_model(Tracker), trackers_path  %></li>
+            <li><%= link_to "Contact", new_contact_form_path  %></li>
+            <li><%= link_to "About", about_home_index_path  %></li>
           </ul>
         </div>
       </div>
