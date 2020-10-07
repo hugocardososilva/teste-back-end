@@ -3,16 +3,22 @@
 module Api
   module V1
     class TrackersController < ApplicationController
+      skip_before_action :verify_authenticity_token
       def create
-        @tracker = Tracker.create(tracker_params)
-        render 'show', status: :created, locals: {tracker: @tracker}
+        @tracker = Tracker.new(tracker_params)
+        @tracker.moment = DateTime.now
+        if @tracker.save
+          render 'show', status: :created, locals: { tracker: @tracker }
+        else
+          render json: @tracker.errors, status: :unprocessable_entity
+        end
       end
 
-      private
+
 
       def tracker_params
         params.require(:tracker).permit(
-          :uuid, :page, :moment
+          :uuid, :page
         )
       end
     end
