@@ -1,2 +1,6 @@
-module Api::V1::TrackersHelper
+module Api
+  module V1
+    module TrackersHelper
+    end
+  end
 end

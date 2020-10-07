@@ -1,0 +1,27 @@
+<h3>Here you will find important information on how to configure your access tracker.</h3>
+<ul>
+  <li>You first need to configure your contact form with the input id to be as follows:</li>
+</ul>
+<pre>
+  &lt;form id="contact_form"&gt;
+    &lt;input id="name" ... /&gt;
+    &lt;input id="email" ... /&gt;
+    ...
+    ...
+  &lt;/form&gt;
+</pre>
+
+<h3>To use the crawler, simply add the following code to your website in the html head:</h3>
+
+<pre>
+  &lt;script src="<%= request.original_url %>tracking.js"&gt;&lt;/script&gt;
+
+</pre>
+
+<p>very easy</p>
+<blockquote>
+  <h4>Remembering that this url will depend on where this application will be available, therefore, it is dynamic </h4>
+</blockquote>
+
+<h1>Users</h1>
+<p>Users are free to use all the functionalities, so just create a user that you can already check the contacts (including including them manually) and the report of the last accesses of your website.</p>
