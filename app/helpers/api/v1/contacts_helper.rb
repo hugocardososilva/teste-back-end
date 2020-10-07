@@ -1,6 +1,6 @@
 module Api
   module V1
-    module TrackersHelper
+    module ContactsHelper
     end
   end
 end
