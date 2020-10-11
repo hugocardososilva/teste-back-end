@@ -1,26 +1,18 @@
 FROM ruby:2.6.6
 
 
-RUN apt-get update -qq && apt-get install -y build-essential
+ENV NODE_VERSION 12
+ENV INSTALL_PATH /opt/app
 
-# for postgres
-RUN apt-get install -y libpq-dev
+RUN curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
 
-# for nokogiri
-RUN apt-get install -y libxml2-dev libxslt1-dev
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
+RUN apt-get update -qq
+RUN apt-get install -y --no-install-recommends nodejs postgresql-client \
+      locales yarn
 
-# for a JS runtime
-RUN apt-get install -y nodejs
+RUN mkdir -p $INSTALL_PATH
 
-ENV APP_HOME /tracking
-RUN mkdir $APP_HOME
-WORKDIR $APP_HOME
-
-ADD Gemfile* $APP_HOME/
-RUN gem install bundler
-RUN bundle install
-
-ADD . $APP_HOME
-
-COPY . /application
+WORKDIR $INSTALL_PATH
