@@ -1,0 +1,25 @@
+pt-BR:
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M:%S"
+  hello: "Olá mundo"
+  logo_name: "ICASEI TESTE"
+  login: "Entrar"
+  logout: "Sair"
+  signup: "Cadastre-se"
+
+  layouts:
+    navigation:
+      home: "Início"
+      about: "Sobre"
+      contact: "Contato"
+  actions:
+    show: "Visualizar"
+    edit: "Editar"
+    destroy: "Excluir"
+    back: "Voltar"
+  messages:
+    awser_confirm: "Tem certeza?"
+
+  activerecord:
+    edit_model: "Editar %{model}"

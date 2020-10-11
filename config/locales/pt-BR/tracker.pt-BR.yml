@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    models:
+      tracker:
+        one: "Rastreador"
+        other: "Rastreadores"
+        report: "Relatório de rastreamento"
+
+    attributes:
+      tracker:
+        uuid: "Identificardor"
+        page: "Página"
+        moment: "Momento"
+
+
+

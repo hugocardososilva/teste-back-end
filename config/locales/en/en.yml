@@ -1,0 +1,22 @@
+en:
+  hello: "Hello world"
+  logo_name: "ICASEI TEST"
+  date:
+    formats:
+      default: "%m/%d/%Y %H:%M"
+  layouts:
+    navigation:
+      home: "Home"
+      about: "About"
+      contact: "Contact"
+  actions:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+  messages:
+    awser_confirm: "Are you sure?"
+
+
+  activerecord:
+    edit_model: "Edit %{model}"

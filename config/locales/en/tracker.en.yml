@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    models:
+      tracker:
+        one: "Tracker"
+        other: "Trackers"
+        report: "Tracking Report"
+
+
+    attributes:
+      tracker:
+        uuid: "UUID"
+        page: "Page"
+        moment: "Moment"
+
+
+
