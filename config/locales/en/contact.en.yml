@@ -1,12 +1,13 @@
 en:
-  models:
-    contact:
-      single: "Contact"
-      plural: "Contacts"
-  attributes:
-    contact:
-      name: "Name"
-      email: "Email"
+  activerecord:
+    models:
+      contact:
+        one: "Contact"
+        other: "Contacts"
+    attributes:
+      contact:
+        name: "Name"
+        email: "Email"
 
 
 

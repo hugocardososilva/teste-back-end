@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Contacts</h1>
+<h1><%= Tracker.model_name.human %></h1>
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>UUID</th>
-      <th>Page</th>
-      <th>Moment</th>
+      <th><%= Tracker.human_attribute_name('id') %></th>
+      <th><%= Tracker.human_attribute_name('uuid') %></th>
+      <th><%= Tracker.human_attribute_name('page') %></th>
+      <th><%= Tracker.human_attribute_name('moment') %></th>
 
     </tr>
   </thead>
@@ -15,9 +16,10 @@
   <tbody>
     <% @trackers.each do |tracker| %>
       <tr>
+        <td><%= tracker.id %></td>
         <td><%= tracker.uuid %></td>
         <td><%= tracker.page %></td>
-        <td><%= tracker.moment %></td>
+        <td><%= l(tracker.moment) %></td>
       </tr>
     <% end %>
   </tbody>

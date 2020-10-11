@@ -1,13 +1,11 @@
 pt-BR:
-  models:
-    contact:
-      single: "Contato"
-      plural: "Contatos"
+  activerecord:
+    models:
+      contact:
+        one: "Contato"
+        other: "Contatos"
 
-  attributes:
-    contact:
-      name: "Nome"
-      email: "Email"
-
-
-
+    attributes:
+      contact:
+        name: "Nome"
+        email: "Email"

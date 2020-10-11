@@ -1,5 +1,13 @@
 pt-BR:
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M:%S"
   hello: "Olá mundo"
+  logo_name: "ICASEI TESTE"
+  login: "Entrar"
+  logout: "Sair"
+  signup: "Cadastre-se"
+
   layouts:
     navigation:
       home: "Início"
