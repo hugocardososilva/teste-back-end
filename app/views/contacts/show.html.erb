@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('attributes.contact.name') %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= t('attributes.contact.name') %>:</strong>
   <%= @contact.email %>
 </p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contact_path %>
+<%= link_to t('actions.edit'), edit_contact_path(@contact) %> |
+<%= link_to t('actions.back'), contact_path %>

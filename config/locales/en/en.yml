@@ -5,4 +5,14 @@ en:
       home: "Home"
       about: "About"
       contact: "Contact"
+  actions:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+  messages:
+    awser_confirm: "Are you sure?"
 
+
+  activerecord:
+    edit_model: "Edit %{model}"

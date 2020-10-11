@@ -1,9 +1,8 @@
-pt-BR:
+en:
   models:
     contact:
       single: "Contact"
       plural: "Contacts"
-
   attributes:
     contact:
       name: "Name"

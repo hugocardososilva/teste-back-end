@@ -9,5 +9,9 @@ pt-BR:
     show: "Visualizar"
     edit: "Editar"
     destroy: "Excluir"
+    back: "Voltar"
   messages:
     awser_confirm: "Tem certeza?"
+
+  activerecord:
+    edit_model: "Editar %{model}"
