@@ -1,0 +1,8 @@
+en:
+  hello: "Hello world"
+  layouts:
+    navigation:
+      home: "Home"
+      about: "About"
+      contact: "Contact"
+

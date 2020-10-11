@@ -1,0 +1,13 @@
+pt-BR:
+  hello: "Olá mundo"
+  layouts:
+    navigation:
+      home: "Início"
+      about: "Sobre"
+      contact: "Contato"
+  actions:
+    show: "Visualizar"
+    edit: "Editar"
+    destroy: "Excluir"
+  messages:
+    awser_confirm: "Tem certeza?"

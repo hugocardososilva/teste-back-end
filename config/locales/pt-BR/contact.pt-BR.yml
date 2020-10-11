@@ -1,0 +1,13 @@
+pt-BR:
+  models:
+    contact:
+      single: "Contato"
+      plural: "Contatos"
+
+  attributes:
+    contact:
+      name: "Nome"
+      email: "Email"
+
+
+

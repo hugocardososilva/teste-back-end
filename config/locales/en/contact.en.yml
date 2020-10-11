@@ -1,0 +1,13 @@
+pt-BR:
+  models:
+    contact:
+      single: "Contact"
+      plural: "Contacts"
+
+  attributes:
+    contact:
+      name: "Name"
+      email: "Email"
+
+
+
