@@ -17,19 +17,10 @@
    <%= render 'shared/navigation' %>
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">TrackingTest</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Início", root_path  %></li>
-            <li><%= link_to "Contact", new_contact_form_path  %></li>
-            <li><%= link_to "About", about_home_index_path  %></li>
-          </ul>
-        </div>
+
+        <a class="navbar-brand" href="#">SAMPLE SITE</a>
+
+        <%= render 'menu/sample_menu' %>
       </div>
     </div>
 
