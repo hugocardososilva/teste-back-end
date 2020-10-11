@@ -1,24 +1,35 @@
-# README
+# Tracking
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+The challenge consists of 2 applications that could run separately but were designed in the same app for ease of employing the test
 
-* Ruby version
+#### Heroku
 
-* System dependencies
+https://icasei-tracking.herokuapp.com/
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+### Instalação
 
-* How to run the test suite
+Unpack the zip file and type these commands:
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+$ bundle
+$ yarn install
+$ rake db:create db:migrate
+$ rails s
+```
 
-* Deployment instructions
+#### Dashboard panel
 
-* ...
+To use the dashboard, simply create a new user and log in using the top menu bar on the right side
+
+#### Docker
+
+Project can be pulled from docker repository with:
+
+```sh
+$ docker pull hugocardososilva/tracking
+
+```
+
