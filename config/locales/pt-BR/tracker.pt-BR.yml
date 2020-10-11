@@ -1,0 +1,14 @@
+pt-BR:
+  models:
+    tracker:
+      single: "Rastreador"
+      plural: "Rastreadores"
+
+  attributes:
+    tracker:
+      uuid: "Identificardor"
+      page: "Página"
+      moment: "Momento"
+
+
+

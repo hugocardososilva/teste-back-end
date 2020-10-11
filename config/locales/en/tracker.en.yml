@@ -1,0 +1,14 @@
+en:
+  models:
+    tracker:
+      single: "Tracker"
+      plural: "Trackers"
+
+  attributes:
+    tracker:
+      uuid: "UUID"
+      page: "Page"
+      moment: "Moment"
+
+
+
