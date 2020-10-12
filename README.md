@@ -3,13 +3,20 @@
 
 The challenge consists of 2 applications that could run separately but were designed in the same app for ease of employing the test
 
-#### Heroku
+#### Database
 
-https://icasei-tracking.herokuapp.com/
+To test the app in development environment, you use this ENV variable for configure you PostgreSQL:
+
+```sh
+  database: ENV('DATABASE_NAME')  { 'tracking_test_development' }
+  host:  ENV('DATABASE_HOST')  { 'localhost' }
+  port: ENV('DATABASE_PORT')  { '5432' } 
+  username: ENV.fetch('DATABASE_USERNAME')  { 'postgres' } 
+  password: ENV.('DATABASE_PASSWORD')  { 'postgres' } 
+```
 
 
-
-### Instalação
+### Installation
 
 Unpack the zip file and type these commands:
 
@@ -33,3 +40,6 @@ $ docker pull hugocardososilva/tracking
 
 ```
 
+#### Feature Mailer
+
+After contact save into database app, it send a e-mail to all users registered into de system with information about contact.
