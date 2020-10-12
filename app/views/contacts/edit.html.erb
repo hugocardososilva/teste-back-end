@@ -1,0 +1,6 @@
+<h1><%= t('activerecord.edit_model', model: "#{t('models.contact.single')}") %></h1>
+
+<%= render 'form', contact: @contact %>
+
+<%= link_to t('actions.show'), @contact %> |
+<%= link_to t('actions.back'), contact_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t('models.contact.plural') %></h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= t('attributes.contact.name') %></th>
+      <th><%= t('attributes.contact.email') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.email %></td>
+        <td><%= link_to t('actions.show'), contact %></td>
+        <td><%= link_to t('actions.edit'), edit_contact_path(contact) %></td>
+        <td><%= link_to t('actions.destroy'), contact, method: :delete, data: { confirm: t('messagens.awser_confirm') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

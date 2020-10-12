@@ -1,0 +1,5 @@
+pt-BR:
+  mailer:
+    subject: "Um novo contato foi cadastrado"
+    body_title: "Novo Contato"
+    contact_text: "Para acessar, acesse o site e verifique"

@@ -1,0 +1,5 @@
+en:
+  mailer:
+    subject: "A new contact has been registered"
+    body_title: "New Contact"
+    contact_text: "To access, click on the link below"

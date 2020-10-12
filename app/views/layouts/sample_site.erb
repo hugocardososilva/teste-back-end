@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title  %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <%= javascript_pack_tag 'application' %>
+    <%= render 'shared/script' %>
+
+  </head>
+  <body>
+   <%= render 'shared/navigation' %>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">SAMPLE SITE</a>
+
+        <%= render 'menu/sample_menu' %>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <%= bootstrap_flash %>
+          <%= yield %>
+        </div>
+
+      </div><!--/row-->
+
+      <footer>
+        <p>&copy; Company 2020</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
